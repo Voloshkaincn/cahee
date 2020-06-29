@@ -6392,3 +6392,22 @@ p {
   color: #ff2b58;
   font-weight: 700;
 }
+
+.contact-form {
+  width: 50%;
+}
+.contact-form__title {
+  margin: 0 auto;
+  padding-top: 100px;
+  max-width: 370px;
+  text-align: center;
+}
+.contact-form__title h2 {
+  font-size: 90px;
+  font-weight: bold;
+}
+.contact-form__sub-title {
+  margin: 50px 0;
+  font-size: 17px;
+  font-weight: 300;
+}
