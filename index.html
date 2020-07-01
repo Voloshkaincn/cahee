@@ -15,6 +15,35 @@
 <body>
     <header class="header">
         <div class="container">
+            <div class="row header__row no-gutters">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <svg class="icon icon__logo">
+                            <use xlink:href="images/sprite.svg#iconLogo"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="topnav" id="myTopnav">
+                    <a class="nav__link active" href="#home">Home</a>
+                    <a class="nav__link" href="#about">About</a>
+                    <a class="nav__link" href="#services">Services</a>
+                    <a class="nav__link" href="#gallery">Gallery</a>
+                    <a class="nav__link" href="#blog">Blog</a>
+                    <a class="nav__link" href="#contact">Contact</a>
+                    <a class="nav__btn icon" href="javascript:void(0);" onclick="myFunction()">
+                        <div class="hamburger" id="hamburger-1">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- <header class="header">
+        <div class="container">
             <div class="row justify-content-between">
                 <div class="col">
                     <div class="logo">
@@ -27,7 +56,7 @@
                 </div>
                 <div class="col-xl-6 col-lg-8 col-md-9">
                     <nav class="nav">
-                        <ul class="nav__list">
+                        <ul class="nav__list navbar">
                             <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
                             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
@@ -39,7 +68,7 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
     <section class="section main" id="main">
         <div class="container">
@@ -60,11 +89,12 @@
     <section class="section section_light about" id="about">
         <div class="container">
             <div class="row about__row">
-                <div class="col-6">
+                <div class="col-md-6 col-12">
+                    <h2 class="h2 d-md-none text-center">About Us</h2>
                     <img class="about__img" src="./images/img.png" alt="">
                 </div>
-                <div class="col about__content ">
-                    <h2 class="h2">About Us</h2>
+                <div class="col-md col-12 about__content ">
+                    <h2 class="h2  d-none d-md-block">About Us</h2>
                     <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris
                         nisi ut
@@ -80,7 +110,8 @@
     <section class="section  section_light service" id="services">
         <div class="container">
             <div class="row justify-content-lg-between  justify-content-center">
-                <div class="col-xl-4 col-lg-5 offset-xl-1 px-0 col-md-6  order-2  order-lg-0 service__wrap">
+                <div
+                    class="col-xl-4 col-lg-5 offset-xl-1 px-0 col-md-6 col-sm-8 col-12 order-2  order-lg-0 service__wrap">
                     <ul class="service__list">
                         <li class="service__item">
                             <a href="#" class="service__link">
@@ -180,7 +211,7 @@
                 <div class="col-8">
                     <h3 class="h3">Subscribe To Us</h3>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6 col-sm-8">
                     <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
@@ -188,11 +219,11 @@
             <form action="#" method="get">
                 <div class="form">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-md-6 col-sm-7">
                             <input class="form__input" type="email" name="email" id="email"
                                 placeholder="Your email address...">
                         </div>
-                        <div class="col-2">
+                        <div class="col">
                             <button type="submit" class="btn btn--tertiary">SUBSCRIBE</button>
                         </div>
                     </div>
@@ -283,17 +314,17 @@
     <footer class="footer">
         <div class="container">
             <div class="row no-guttersv align-items-center">
-                <div class="col-5">
+                <div class="col-sm-5 col-12 order-1 order-sm-0">
                     <div class="footer__left">
                         &copy; 2015 Company. All right reserved.
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-sm col-12">
                     <div class="footer__center">
                         <a href="#"><img src="./images/logo-small.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-5">
+                <div class="col-sm-5 col-12  order-2  order-sm-0">
                     <div class="footer__right">
                         Made with <span class="red">love</span> by Auskteez
                     </div>
@@ -301,6 +332,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
