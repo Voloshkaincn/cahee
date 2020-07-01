@@ -15,17 +15,19 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="row no-gutters justify-content-between">
-                <div class="col-2">
+            <div class="row justify-content-between">
+                <div class="col">
                     <div class="logo">
                         <a href="#" class="logo__link">
-                            <img src="./PSD/cahee-assets/logo.svg" class="logo__img" alt="">
+                            <svg class="icon icon__logo">
+                                <use xlink:href="images/sprite.svg#iconLogo"></use>
+                            </svg>
                         </a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-8">
                     <nav class="nav">
-                        <ul class="nav__list justify-content-between">
+                        <ul class="nav__list">
                             <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
                             <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                             <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
@@ -37,30 +39,34 @@
                 </div>
             </div>
         </div>
-        <div class="header__content">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-4">
-                        <h2>Fresh Life</h2>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis
-                            nostrud exercitation ullamco.</p>
-                        <button class="btn">GET FREE NOW</button>
-                    </div>
-                </div>
-                <a href="#about" class="scroll"></a>
-            </div>
-        </div>
     </header>
-    <section class="section section--about" id="about">
+
+    <section class="section main" id="main">
         <div class="container">
-            <div class="row justify-content-between no-gutters">
-                <div class="col-6">
-                    <img src="./images/img.png" alt="">
+            <div class="row no-gutters">
+                <div class="col-lg-4 col-6">
+                    <h1 class="h1">Fresh Life</h1>
+                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis
+                        nostrud exercitation ullamco.</p>
+                    <button class="btn mt-2">GET FREE NOW</button>
                 </div>
-                <div class="col-5 offset-1">
-                    <h1>About Us</h1>
-                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            </div>
+
+        </div>
+        <a href="#about" class="scroll"></a>
+    </section>
+
+    <section class="section section_light about" id="about">
+        <div class="container">
+            <div class="row about__row">
+                <div class="col-6">
+                    <img class="about__img" src="./images/img.png" alt="">
+                </div>
+                <div class="col about__content ">
+                    <h2 class="h2">About Us</h2>
+                    <p>Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris
                         nisi ut
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum.</p>
@@ -70,62 +76,66 @@
             </div>
         </div>
     </section>
-    <section class="section section--services" id="services">
+
+    <section class="section  section_light service" id="services">
         <div class="container">
-            <div class="row no-gutters">
-                <div class="col-4 offset-1">
-                    <div class="service__list">
-                        <div class="service__item">
+            <div class="row justify-content-between">
+                <div class="col-4 offset-1 px-0">
+                    <ul class="service__list">
+                        <li class="service__item">
                             <a href="#" class="service__link">
-                                <div class="row no-gutters">
-                                    <div class="col-9">
-                                        <div class="service__text_1">Online Shopping</div>
-                                    </div>
-                                    <div class="col-3"><span class="icon-shop"></span></div>
+                                <div class="col-9">
+                                    Online Shopping
+                                </div>
+                                <div class="col-3 service__icon">
+                                    <div class="icon-shop"></div>
                                 </div>
                             </a>
-                        </div>
-                        <div class="service__item">
+                        </li>
+                        <li class="service__item">
                             <a href="#" class="service__link">
-                                <div class="row no-gutters">
-                                    <div class="col-9">
-                                        <div class="service__text_2">Quality Product</div>
-                                    </div>
-                                    <div class="col-3"><span class="icon-hand"></span></div>
+                                <div class="col-9">
+                                    Quality Product
+                                </div>
+                                <div class="col-3 service__icon">
+                                    <div class="icon-hand"></div>
                                 </div>
                             </a>
-                        </div>
-                        <div class="service__item">
+                        </li>
+                        <li class="service__item">
                             <a href="#" class="service__link">
-                                <div class="row no-gutters">
-                                    <div class="col-9">
-                                        <div class="service__text_3">Domestic & International Delivery</div>
-                                    </div>
-                                    <div class="col-3"><span class="icon-globe"></span></div>
+                                <div class="col-9">
+                                    Domestic & International Delivery
+                                </div>
+                                <div class="col-3 service__icon">
+                                    <div class="icon-globe"></div>
                                 </div>
                             </a>
-                        </div>
-                        <div class="service__item">
+                        </li>
+                        <li class="service__item">
                             <a href="#" class="service__link">
-                                <div class="row no-gutters">
-                                    <div class="col-9">
-                                        <div class="service__text_4">Well Organized</div>
+                                <div class="col-9">
+                                    Well Organized
+                                </div>
+                                <div class="col-3 service__icon">
+                                    <div class="icon-carrot">
                                     </div>
-                                    <div class="col-3"><span class="icon-carrot"></span></div>
                                 </div>
                             </a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-6 offset-1">
-                    <h1>Our Services</h1>
+                <div class="col-6 d-flex justify-content-end align-items-center">
+                    <img src="images/tomato.png" alt="tomato" class="service__img">
+                    <h2 class="h2">Our Services</h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section section--gallery" id="gallery">
+
+    <section class="section gallery" id="gallery">
         <div class="container">
-            <h1>Gallery</h1>
+            <h2 class="h2">Gallery</h2>
             <div class="row">
                 <div class="col-6 offset-3">
                     <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -134,35 +144,38 @@
                         consequat.</p>
                 </div>
             </div>
-            <div class="photos">
-                <div class="row">
-                    <div class="col-8"><img src="./images/gal-1.png" alt=""></div>
+            <div class="mt-4">
+                <div class=" row">
+                    <div class="gallery__col col-8"><img class="gallery__img" src="./images/gal-1.png" alt=""></div>
                     <div class="col-4">
                         <div class="row">
-                            <div class="col-12"><img src="./images/gal-2.png" alt=""></div>
+                            <div class="gallery__col col-12"><img class="gallery__img" src="./images/gal-2.png" alt="">
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="col-12"><img src="./images/gal-3.png" alt=""></div>
+                            <div class="gallery__col col-12"><img class="gallery__img" src="./images/gal-3.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6"><img src="./images/gal-4.png" alt=""></div>
-                    <div class="col-6"><img src="./images/gal-5.png" alt=""></div>
+                    <div class="gallery__col col-6"><img class="gallery__img" src="./images/gal-4.png" alt=""></div>
+                    <div class="gallery__col col-6"><img class="gallery__img" src="./images/gal-5.png" alt=""></div>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-2 offset-5">
+            <div class="row mt-4">
+                <div class="col mx-auto">
                     <button class="btn btn--secondary">VIEW MORE</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section section--subscribe">
+
+    <section class="section subscribe">
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <h3>Subscribe To Us</h3>
+                    <h3 class="h3">Subscribe To Us</h3>
                 </div>
                 <div class="col-6">
                     <p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -170,7 +183,7 @@
                 </div>
             </div>
             <form action="#" method="get">
-                <div class="form form--subscribe">
+                <div class="form">
                     <div class="row">
                         <div class="col-6">
                             <input class="form__input" type="email" name="email" id="email"
@@ -184,36 +197,38 @@
             </form>
         </div>
     </section>
-    <section class="section section--blog" id="blog">
+
+    <section class="section section_light blog" id="blog">
         <div class="container">
-            <h1>Blog</h1>
+            <h2 class="h2">Blog</h2>
             <div class="col-6 offset-3 no-gutters">
-                <p>Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                <p class="mb-5">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut
                     aliquip
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <a href="#" class="blog__link">
-                        <img src="./images/blog-1.png" alt="">
+                        <img class="blog__img" src="./images/blog-1.png" alt="">
                         <div class="blog__hover-top">20 <small>NOV</small></div>
                         <div class="blog__hover-bottom">Green Smoothies: Too Much of a<br>Good Thing?<br>
                             <small>By Auskteez - 2 hours ago</small>
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <a href="#" class="blog__link">
-                        <img src="./images/blog-2.png" alt="">
+                        <img class="blog__img" src="./images/blog-2.png" alt="">
                         <div class="blog__hover-top">14 <small>NOV</small></div>
                         <div class="blog__hover-bottom">Growing Food and a “Thirst” for <br>Innovation<br>
                             <small>By Auskteez - 3 hours ago</small>
                         </div>
                     </a>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <a href="#" class="blog__link">
-                        <img src="./images/blog-3.png" alt="">
+                        <img class="blog__img" src="./images/blog-3.png" alt="">
                         <div class="blog__hover-top">10 <small>NOV</small></div>
                         <div class="blog__hover-bottom">Pesticides & Food: What You Need<br>to Know<br>
                             <small>By Auskteez - 6 hours ago</small>
@@ -221,59 +236,61 @@
                     </a>
                 </div>
             </div>
-            <div class="row no-gutters">
-                <div class="col-2 offset-5">
-                    <button class="btn btn--secondary">VIEW MORE</button>
+            <div class="row mt-5">
+                <div class="col mx-auto">
+                    <button class="btn btn--brilliant">VIEW MORE</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section section--contact" id="contact">
+
+    <section class="section contact" id="contact">
         <div class="container">
-            <h1>Contact</h1>
+            <h2 class="h2">Contact</h2>
             <div class="col-4 offset-4">
-                <p>For new projects, ideas, business or anything
+                <p class="mb-5">For new projects, ideas, business or anything
                     you'd like to discuss, contact with me!</p>
             </div>
-            <div class="row no-gutters">
-                <div class="col-5">
-                    <form class="form form--message" action="#" method="get">
-                        <input class="name" type="text" placeholder="Your name...">
-                        <input class="mail" type="email" placeholder="Your email...">
-                        <input class="phnum" type="tel" placeholder="Your phone number... ">
-                        <textarea name="message" placeholder="Your messge..."></textarea>
+            <div class="row justify-content-between">
+                <div class="col  contact__form">
+                    <form class="form" action="#" method="get">
+                        <input class="contact__input" name="name" type="text" placeholder="Your name...">
+                        <input class="contact__input" name="mail" type="email" placeholder="Your email...">
+                        <input class="contact__input" name="phnum" type="tel" placeholder="Your phone number... ">
+                        <textarea class="contact__input contact__textarea" name="message"
+                            placeholder="Your messge..."></textarea>
                         <input class="btn btn--tertiary" type="submit" hidden>
                     </form>
                 </div>
-                <div class="col-3 offset-2">
-                    <div class="contacts">
-                        <div class="contacts__big ">ADDRESS</div>
-                        <div class="contacts__small contacts__small--1">123 City name, Street, City, Country</div>
-                        <div class="contacts__big contacts__big--2">EMAIL</div>
-                        <div class="contacts__small contacts__small--2"><a
-                                href="mailto:cahee@domain.com">cahee@domain.com</a></div>
-                        <div class="contacts__big contacts__big--3">PHONE</div>
-                        <div class="contacts__small contacts__small--3"><a href="tel:+012 345 6789">+012 345 6789</a>
-                        </div>
+                <div class="col-5 pr-0">
+                    <div class="contact__content">
+                        <div class="contact__big ">ADDRESS</div>
+                        <div>123 City name, Street, City, Country</div>
+                        <div class="contact__big mt-3">EMAIL</div>
+                        <a href="mailto:cahee@domain.com" class=" link">cahee@domain.com</a>
+                        <div class="contact__big mt-3">PHONE</div>
+                        <a href="tel:+012 345 6789" class=" link">+012 345 6789</a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+
     <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-3">
+            <div class="row no-guttersv align-items-center">
+                <div class="col-5">
                     <div class="footer__left">
                         &copy; 2015 Company. All right reserved.
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col">
                     <div class="footer__center">
                         <a href="#"><img src="./images/logo-small.png" alt=""></a>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-5">
                     <div class="footer__right">
                         Made with <span class="red">love</span> by Auskteez
                     </div>
