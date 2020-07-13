@@ -188,6 +188,9 @@ a {
             opacity: 0.8;
         }
     }
+    @media \\0 screen {
+        background-color: #5585a2;
+    }
     &--secondary {
         background-color: #5585a2;
     }
@@ -232,6 +235,19 @@ a {
     display: flex;
     align-items: center;
     position: relative;
+
+    @media (max-width: 991px) and (min-resolution: 92dpi) {
+        background-image: url(../images/top900.jpg);
+    }
+    @media (max-width: 991px) and (min-resolution: 192dpi) {
+        background-image: url(../images/top1500.jpg);
+    }
+    // @media (max-width: 991px) {
+    //     background-image: url(../images/top900.jpg);
+    // }
+    @media (max-width: 576px) {
+        background-image: url(../images/top576.jpg);
+    }
 }
 
 .about {
@@ -239,12 +255,14 @@ a {
     padding-bottom: 60px;
     &__img {
         margin: 0 auto;
-        max-width: 80%;
+        max-width: 360px;
+        width: 100%;
         display: block;
         margin-top: 15px;
         @include media-breakpoint-up(lg) {
             margin-left: 11px;
             max-width: 100%;
+            width: auto;
         }
         @include media-breakpoint-up(md) {
             max-width: calc(100% + 30px);
@@ -332,8 +350,52 @@ a {
     }
 }
 
+.photos {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: "big big big item" "big big big item2" "midle1 midle1 midle2 midle2";
+    gap: 30px;
+    @media (max-width: 991px) {
+        max-width: unset;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "big big" "item item2" "midle1 midle2";
+    }
+    @media (max-width: 575px) {
+        max-width: 320px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: "big" "item" "item2" "midle1" "midle2";
+    }
+
+    &__item {
+        &:first-child {
+            grid-area: big;
+        }
+        &:nth-child(2) {
+            grid-area: item;
+        }
+        &:nth-child(3) {
+            grid-area: item2;
+        }
+        &:nth-child(4) {
+            grid-area: midle1;
+        }
+        &:nth-child(5) {
+            grid-area: midle2;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
 .subscribe {
     background: url(../images/subscribe.png) no-repeat;
+
     background-size: 600px;
     background-position: top 28% right 20%;
     padding: 100px 0 160px;

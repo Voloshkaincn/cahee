@@ -91,7 +91,11 @@
             <div class="row about__row">
                 <div class="col-md-6 col-12">
                     <h2 class="h2 d-md-none text-center">About Us</h2>
-                    <img class="about__img" src="./images/img.png" alt="">
+                    <img class="about__img" srcset="images/img-md.png 360w,
+                                images/img-lg.png 480w,
+                                images/img.png 650w" sizes="(max-width: 991px) 360px,
+                                (max-width: 1239px) 480px,
+                                650px" src="images/img.png" alt="strawberry">
                 </div>
                 <div class="col-md col-12 about__content ">
                     <h2 class="h2  d-none d-md-block">About Us</h2>
@@ -175,28 +179,55 @@
                         consequat.</p>
                 </div>
             </div>
+
+            <!-- display grid -->
+            <div class="photos">
+                <div class="photos__item">
+                    <img class="photos__item photos__img " src="./images/gal-1.png" alt="">
+                </div>
+                <div class="photos__item">
+                    <img class="photos__item photos__img " src="./images/gal-2.png" alt="">
+                </div>
+                <div class="photos__item">
+                    <img class="photos__item photos__img" src="./images/gal-3.png" alt="">
+                </div>
+                <div class="photos__item">
+                    <img class="photos__item photos__img" src="./images/gal-4.png" alt="">
+                </div>
+                <div class="photos__item">
+                    <img class="photos__item photos__img " src="./images/gal-5.png" alt="">
+                </div>
+            </div>
+            <!-- end display grid -->
+
+            <!-- bootestrap grid -->
             <div class="mt-4">
                 <div class=" row">
-                    <div class="gallery__col col-lg-8 col-12"><img class="gallery__img" src="./images/gal-1.png" alt="">
+                    <div class="gallery__col col-lg-8 col-12">
+                        <img class="gallery__img" src="./images/gal-1.png" alt="">
                     </div>
                     <div class="col-lg-4 col-12">
                         <div class="row">
-                            <div class="gallery__col col-lg-12 col-sm-6 col-12"><img class="gallery__img"
-                                    src="./images/gal-2.png" alt="">
+                            <div class="gallery__col col-lg-12 col-sm-6 col-12">
+                                <img class="gallery__img" src="./images/gal-2.png" alt="">
                             </div>
-                            <div class="gallery__col col-lg-12 col-sm-6 col-12"><img class=" gallery__img"
-                                    src="./images/gal-3.png" alt="">
+                            <div class="gallery__col col-lg-12 col-sm-6 col-12">
+                                <img class=" gallery__img" src="./images/gal-3.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="gallery__col col-sm-6 col-12"><img class="gallery__img" src="./images/gal-4.png" alt="">
+                    <div class="gallery__col col-sm-6 col-12">
+                        <img class="gallery__img" src="./images/gal-4.png" alt="">
                     </div>
-                    <div class="gallery__col col-sm-6 col-12"><img class="gallery__img" src="./images/gal-5.png" alt="">
+                    <div class="gallery__col col-sm-6 col-12">
+                        <img class="gallery__img" src="./images/gal-5.png" alt="">
                     </div>
                 </div>
             </div>
+            <!-- end bootestrap grid -->
+
             <div class="row mt-4">
                 <div class="col mx-auto">
                     <button class="btn btn--secondary">VIEW MORE</button>
@@ -307,7 +338,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
