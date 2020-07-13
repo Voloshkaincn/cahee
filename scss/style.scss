@@ -56,6 +56,9 @@ body {
     color: $text-color;
     font-size: 17px;
     line-height: 1.6;
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
 }
 a {
     color: $text-color;
@@ -71,7 +74,7 @@ a {
     }
 }
 .h1 {
-    font-size: 45px;
+    font-size: 2.64em;
     font-weight: 900;
     line-height: 1;
     margin: 0;
@@ -83,7 +86,7 @@ a {
     }
 }
 .h2 {
-    font-size: 60px;
+    font-size: 3.5em;
     font-weight: 600;
     line-height: 1;
     margin: 0;
@@ -187,9 +190,6 @@ a {
         &:hover {
             opacity: 0.8;
         }
-    }
-    @media \\0 screen {
-        background-color: #5585a2;
     }
     &--secondary {
         background-color: #5585a2;
@@ -355,6 +355,7 @@ a {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas: "big big big item" "big big big item2" "midle1 midle1 midle2 midle2";
     gap: 30px;
+    grid-gap: 30px;
     @media (max-width: 991px) {
         max-width: unset;
         grid-template-columns: 1fr 1fr;
